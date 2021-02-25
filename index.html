@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <style>
+    body {
+        background: lightgrey;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    .row {
+        background: yellow;
+    }
+
+    .col {
+        border-style: solid;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                1 of 3 col-3
+            </div>
+            <div class="col-6">
+                2 of 3 (wider)
+            </div>
+            <div class="col-3">
+                3 of 3 col-3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6> Price: <span id="theprice">$1.00</span></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" id="changePrice">Change Price</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                2 of 3 (wider)
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>
+    console.log("hello world");
+
+    function changePrice() {
+        $("#theprice").text("20 pesos")
+    }
+
+    $("#changePrice").click(changePrice);
+
+    $("nav").load("2112-5nav.html")
+    </script>
+</body>
+
+</html>
